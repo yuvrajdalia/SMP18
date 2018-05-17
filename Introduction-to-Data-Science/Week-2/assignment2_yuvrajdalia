@@ -1,0 +1,57 @@
+ANS 1. PROS:
+i) Python is a high level language.
+ii) It is emphasized on great readability.
+iii) Python is capable of developing glue code.
+        CONS:
+i) It is slower to execute.
+
+
+ANS 2. Exponentiation Operator (**).
+
+
+ANS 3. // is called the floor division operator. It rounds off the answer we get after dividing two numbers to greatest integer lesser than or equal to the answer.
+
+
+ANS 4.
+print("enter the list")
+l=input().split()
+for i in range(0,len(l)//2):
+    del l[i+1]
+    print("the final list is:", end="")
+print(l)
+
+                      
+ANS 5.
+print("Enter the list to be sorted")
+l = input().split()
+for i in range(0,len(l)):
+    for j in range(1,len(l)-i):
+       if(l[j-1]>l[j]):
+                temp=l[j-1]
+                l[j-1]=l[j]
+                l[j]=temp
+print("The sorted list is:", end="")
+print(l)
+
+ANS 6.
+print("Enter the value of n")
+n=int(input())
+for i in range(0,n):
+    for j in range(0,n):
+        if(i+j>=n-1):
+            print("*",end="")
+        else:
+           print(" ",end="")
+    for j in range(0,i):
+        print("*",end="")
+    print("")
+for i in range(0,n-1):
+    for j in range(0,n):
+        if(j>i):
+            print("*",end="")
+        else:
+            print(" ",end="")
+    for j in range(0,n-2-i):
+        print("*",end="")
+    print("")
+                      
